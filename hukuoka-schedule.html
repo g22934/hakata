@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>福岡2泊3日旅行スケジュール</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1em;
+      background: #f8f8f8;
+      color: #333;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .day {
+      background: white;
+      border-radius: 10px;
+      padding: 1em;
+      margin: 1em 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .time-block {
+      margin-bottom: 1em;
+    }
+    .time {
+      font-weight: bold;
+      color: #555;
+    }
+    .hotel {
+      text-align: center;
+      font-size: 0.95em;
+      margin-bottom: 1em;
+      color: #666;
+    }
+    ul {
+      margin: 0.5em 0 1em 1.5em;
+    }
+    .tips {
+      background: #fff7e6;
+      border-left: 5px solid #f0ad4e;
+      padding: 0.5em 1em;
+      margin: 1em 0;
+      border-radius: 6px;
+    }
+    .mode-switch {
+      margin: 1em auto;
+      max-width: 500px;
+      text-align: center;
+    }
+    .mode-switch button {
+      margin: 0 0.5em;
+      padding: 0.5em 1em;
+      font-size: 1em;
+    }
+    .rental-only, .norental-only {
+      display: none;
+    }
+    .rental .rental-only {
+      display: block;
+    }
+    .norental .norental-only {
+      display: block;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 0.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>福岡2泊3日旅行プラン</h1>
+
+  <div class="mode-switch">
+    <strong>表示モード切替：</strong>
+    <button onclick="setMode('rental')">🚗 レンタカーあり</button>
+    <button onclick="setMode('norental')">🚃 レンタカーなし</button>
+  </div>
+
+  <div class="hotel">
+    🏨 宿泊ホテル：<strong>ランドーレジデンシャルホテル福岡アネックス</strong><br>
+    住所：福岡県福岡市博多区博多駅南2丁目8-16<br>
+    アクセス：博多駅から徒歩約10〜15分、閑静な住宅街で静かに過ごせる立地です。<br>
+    備考：長期滞在向け設備もあり、電子レンジや冷蔵庫が部屋にあるためコンビニ食なども快適に利用可能。
+  </div>
+
+  <div class="tips">
+    🔖 <strong>旅行全体の注意点・やることメモ</strong>
+    <ul>
+      <li>暑さ対策：8月の福岡は非常に暑いため、帽子・日焼け止め・水分補給は必須！</li>
+      <li>屋台や人気店は行列必至なので、事前に予約や混雑時間をチェック</li>
+      <li>キャッシュレス対応が進んでいるが、屋台などでは現金も必要</li>
+      <li>交通系ICカード（Suica / nimoca）を事前チャージしておくと便利</li>
+      <li>スマホの充電対策にモバイルバッテリー持参がおすすめ</li>
+      <li>写真撮影多めの予定なので、スマホ・カメラの空き容量もチェック</li>
+    </ul>
+  </div>
+
+  <div class="day">
+    <h2>1日目（博多グルメ＆屋台体験デイ）</h2>
+    <div class="time-block">
+      <div class="time">🕘 朝〜昼</div>
+      <div>
+        - 福岡空港到着（3人）<br>
+        - 地下鉄空港線で博多駅へ移動（約5分）<br>
+        - ホテルへ徒歩またはタクシーで移動し、荷物を預ける<br>
+        - 朝ごはんがまだの人は、博多駅構内のカフェなどで軽食も可
+      </div>
+    </div>
+    <div class="time-block">
+      <div class="time">🕛 昼</div>
+      <div>
+        - 一蘭本社総本店でとんこつラーメン🍜<br>
+        - キャナルシティ博多でショッピング＆休憩（徒歩圏内）<br>
+        - 博多川周辺で写真スポット巡り
+      </div>
+    </div>
+    <div class="time-block">
+      <div class="time">🕐 午後</div>
+      <div>
+        - 「ふくや」や「やまや」など明太子グルメめぐり<br>
+        - ホテルに一旦戻ってチェックイン＆休憩
+      </div>
+    </div>
+    <div class="time-block">
+      <div class="time">🕗 夜</div>
+      <div>
+        - もつ鍋「おおやま 博多店」など人気店を予約<br>
+        - 中洲屋台街へ移動し、焼きラーメン・串などを堪能🍶<br>
+        - 夜遅くに到着する友人と中洲で合流 → 飲み直しも可
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <h2>2日目（太宰府＆糸島観光デイ）</h2>
+
+    <div class="rental-only">
+      <div class="time-block">
+        <div class="time">🚗 レンタカー利用プラン</div>
+        <div>
+          - 朝食後、ホテル近くでレンタカーを手配<br>
+          - 太宰府天満宮（約40分） → 糸島（約1時間）へドライブ<br>
+          - 糸島のビーチカフェや絶景スポット（桜井二見ヶ浦、白糸の滝）を巡る<br>
+          - 夕方に博多へ戻り、車返却 → 休憩・夕食へ
+        </div>
+      </div>
+    </div>
+
+    <div class="norental-only">
+      <div class="time-block">
+        <div class="time">🚃 公共交通利用プラン</div>
+        <div>
+          - 朝：西鉄電車で太宰府天満宮へ（博多→天神→太宰府、約40〜50分）<br>
+          - 昼：太宰府で梅ヶ枝餅や参道散策、近隣の九州国立博物館も候補に<br>
+          - 午後：天神に戻り、海沿いの「シーサイドももち」へ地下鉄移動<br>
+          - 夜：博多駅周辺または天神で夕食＆買い物
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <h2>3日目（柳川ひまわり園＆帰路）</h2>
+    <div class="time-block">
+      <div class="time">🕘 朝</div>
+      <div>
+        - チェックアウト（荷物は博多駅ロッカーまたはホテルに預け）<br>
+        - 地下鉄→西鉄天神大牟田線で柳川へ（特急で約50分）<br>
+        - ひまわり園や川下りなど自然満喫🌻
+      </div>
+    </div>
+    <div class="time-block">
+      <div class="time">🕛 昼</div>
+      <div>
+        - うなぎのせいろ蒸しでランチ（元祖本吉屋など）<br>
+        - お土産屋さんをのぞく
+      </div>
+    </div>
+    <div class="time-block">
+      <div class="time">🕒 午後</div>
+      <div>
+        - 博多へ戻る（15時〜16時頃）<br>
+        - お土産購入（博多駅構内：博多阪急、デイトスなど）<br>
+        - 福岡空港へ移動（夕方〜夜発便に合わせて）
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function setMode(mode) {
+      document.body.classList.remove('rental', 'norental');
+      document.body.classList.add(mode);
+    }
+    setMode('rental'); // デフォルト表示：レンタカーあり
+  </script>
+</body>
+</html>
